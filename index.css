@@ -16,7 +16,7 @@ p {
   float: left;
   width: 16.66%;
   height: 100%;
-  transition: all 0.5s ease-in-out;
+  transition: all 1s cubic-bezier(0.15, 0.63, 0.01, 0.79);
   background: center / cover no-repeat;
   box-sizing: border-box;
   display: flex;

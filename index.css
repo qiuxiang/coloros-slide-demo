@@ -1,0 +1,87 @@
+p {
+  margin: 0;
+}
+
+.more-list {
+  list-style: none;
+  width: 1200px;
+  margin: auto;
+  height: 50vh;
+  overflow: hidden;
+  color: #fff;
+  display: flex;
+}
+
+.more-list-item {
+  float: left;
+  width: 16.66%;
+  height: 100%;
+  transition: all 0.5s ease-in-out;
+  background: center / cover no-repeat;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.more-list-item:nth-child(1) {
+  background-image: url(https://static01.coloros.com/www/public/img/topic7/more-list-1.jpg);
+}
+
+.more-list-item:nth-child(2) {
+  background-image: url(https://static01.coloros.com/www/public/img/topic7/more-list-2.jpg);
+}
+
+.more-list-item:nth-child(3) {
+  background-image: url(https://static01.coloros.com/www/public/img/topic7/more-list-3.jpg);
+}
+
+.more-list-item:nth-child(4) {
+  background-image: url(https://static01.coloros.com/www/public/img/topic7/more-list-4.jpg);
+}
+
+.more-list-item:nth-child(5) {
+  background-image: url(https://static01.coloros.com/www/public/img/topic7/more-list-5.jpg);
+}
+
+.more-list-item:nth-child(6) {
+  background-image: url(https://static01.coloros.com/www/public/img/topic7/more-list-6.jpg);
+}
+
+.more-list-item:hover {
+  width: 600px;
+  flex: auto;
+}
+
+.more-list-item .more-list-item-description {
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+  margin-top: 20px;
+  color: #ddd;
+  height: 0;
+}
+
+.more-list-item:hover .more-list-item-description {
+  opacity: 1;
+  animation: 1s forwards slide;
+}
+
+.more-list-item-title {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: bold;
+}
+
+.more-list-item-mask {
+  flex: 1;
+}
+
+@keyframes slide {
+  from {
+    height: 0;
+  }
+  to {
+    height: auto;
+  }
+}
